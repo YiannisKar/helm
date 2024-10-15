@@ -121,3 +121,17 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+mysql: 
+  enabled: true
+  auth: 
+    database: "my_custom_db"
+    username: "customowner"
+    password: "test1234"
+    primary: 
+      service: 
+        type: NodePort
+
+
+rabbitmq:
+  enabled: false
